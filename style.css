@@ -23,7 +23,8 @@ nav div {
 	padding-left: 20px;
 }
 #navMain div {
-	display: block;
+	display: block; 
+	/* a div is already a block elment. not needed*/
 }
 
 /*content styling*/
@@ -35,4 +36,11 @@ nav div {
 }
 .sideImgContainer img {
 	width: 300px;
+	/* better to give the with to the container and make the img 100% wide*/
 }
+
+/*
+- in general i am for a fan of naming conventions with "-" e.g. "nav-main", but that is up to you as long as you stick to it
+
+
+*/
