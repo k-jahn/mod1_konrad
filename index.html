@@ -4,18 +4,23 @@
 <head>
 	<title>About NYSL</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- what other tags could be helpful in the <head>? -->
 </head>
 
 <body>
-<nav>
+<nav> 
+	<!-- nav is not the correct semantic here. see <header> -->
 	<div id="navLogo">
 		<img src="images/nysl_logo.png" alt="Northside Youth Soccer League" class="logo">
 	</div>
-	<div id="navMain">
+	<div id="navMain"> 
+		<!-- #navTitle created, but not used. Div not really needed -->
 		<div id="navTitle">
 			<h1>Northside Youth Soccer League</h1>
 		</div>		
+		<!-- navlinks work, but here the <nav> element should be used.  -->
 		<div id="navLinks">
+			<!-- this works, but could be build better. ul li, or nav a? -->
 			Home | <a href="about.html">About NYSL</a> | <a href="contact.html">Contact</a>
 		</div>
 	</div>
@@ -25,8 +30,11 @@
 		<img src="images/soccer_image1.jpg">
 	</div>
 	<div class="contentContainer">
+		<!-- class  contentContainer never used. needed? -->
 		<h2>Upcoming Dates</h2>
 		<h3>August 4</h3>
+
+		<!-- Markup incomplete. Have a look at <dt> <dl> <dd>... -->
 			NYSL Fundraiser
 		August 16
 			Season Kick-off. Meet the Teams
