@@ -3,43 +3,65 @@
 
 <head>
 	<title>About NYSL</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- what other tags could be helpful in the <head>? -->
 </head>
 
 <body>
-<nav> 
+<header> 
 	<!-- nav is not the correct semantic here. see <header> -->
+		<!-- fixed -->
 	<div id="navLogo">
 		<img src="images/nysl_logo.png" alt="Northside Youth Soccer League" class="logo">
 	</div>
 	<div id="navMain"> 
 		<!-- #navTitle created, but not used. Div not really needed -->
-		<div id="navTitle">
+		<div >
 			<h1>Northside Youth Soccer League</h1>
 		</div>		
 		<!-- navlinks work, but here the <nav> element should be used.  -->
-		<div id="navLinks">
+			<!-- fixed -->
+		<nav>
 			<!-- this works, but could be build better. ul li, or nav a? -->
-			Home | <a href="about.html">About NYSL</a> | <a href="contact.html">Contact</a>
-		</div>
+			<!-- like this? -->
+			<ul>
+				<li>
+					<a href="index.html">Index</a>
+				</li>
+				<li> | </li>
+				<li>
+					<a href="about.html">About NYSL</a>
+				</li>
+				<li> | </li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+
+			</ul>
+		</nav>
 	</div>
-</nav>
+</header>
+
 <div id="container">
 	<div class="sideImgContainer">
 		<img src="images/soccer_image1.jpg">
 	</div>
-	<div class="contentContainer">
+	<div >
 		<!-- class  contentContainer never used. needed? -->
-		<h2>Upcoming Dates</h2>
-		<h3>August 4</h3>
+		<!-- true -->
 
 		<!-- Markup incomplete. Have a look at <dt> <dl> <dd>... -->
-			NYSL Fundraiser
-		August 16
-			Season Kick-off. Meet the Teams
-		September 1
-			First Game of the Season (Check Game Schedule for details)
+			<!-- my bad, done -->
+		<h2>Upcoming Dates</h2>
+
+		<dl>
+			<dt>August 4</dt>
+				<dd>NYSL Fundraiser</dd>
+			<dt>August 16</dt>
+				<dd>Season Kick-off. Meet the Teams</dd>
+			<dt>September 1</dt>
+				<dd>First Game of the Season (Check Game Schedule for details)</dd>
+		</dl>
 	</div>
 </div>
 </body>

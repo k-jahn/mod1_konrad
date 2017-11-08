@@ -6,14 +6,19 @@ body {
 h1 {
 	font-size: 35px;
 }
+dt {
+	font-weight: bold;
+}
+
 
 /*navbar styling*/
-nav {
+header {
 	border-bottom: 2px solid black;
 	margin-bottom: 10px;
 	padding-bottom: 10px
+	background: silver;
 }
-nav div {
+header div {
 	display: inline-block;
 }
 .logo {
@@ -22,9 +27,8 @@ nav div {
 #navMain {
 	padding-left: 20px;
 }
-#navMain div {
-	display: block; 
-	/* a div is already a block elment. not needed*/
+nav ul li{
+	display: inline;
 }
 
 /*content styling*/
@@ -33,14 +37,16 @@ nav div {
 }
 .sideImgContainer {
 	margin-right: 20px;
+	width: 300px;
 }
 .sideImgContainer img {
-	width: 300px;
-	/* better to give the with to the container and make the img 100% wide*/
+	width: 100%;
+	/* better to give the with to the container and make the img 100% wide  
+	Done -K*/
 }
 
 /*
 - in general i am for a fan of naming conventions with "-" e.g. "nav-main", but that is up to you as long as you stick to it
 
-
+    I'm using us keyboard layout for coding, so i think ill aim for camelCase, and am working on consistency -K
 */
