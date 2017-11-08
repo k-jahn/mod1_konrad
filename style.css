@@ -1,0 +1,38 @@
+/*general styling*/
+
+body {
+	font-family: sans-serif;
+}
+h1 {
+	font-size: 35px;
+}
+
+/*navbar styling*/
+nav {
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+	padding-bottom: 10px
+}
+nav div {
+	display: inline-block;
+}
+.logo {
+	width: 150px;
+}
+#navMain {
+	padding-left: 20px;
+}
+#navMain div {
+	display: block;
+}
+
+/*content styling*/
+#container {
+	display: flex;
+}
+.sideImgContainer {
+	margin-right: 20px;
+}
+.sideImgContainer img {
+	width: 300px;
+}
