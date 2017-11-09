@@ -3,7 +3,7 @@
 
 <head>
 	<title>About NYSL</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<!-- what other tags could be helpful in the <head>? -->
 	<!-- maybe these? -->
 	<link rel="icon" type="image/png" href="images/nysl_logo.png">
@@ -15,9 +15,10 @@
 </head>
 
 <body>
+
 <header> 
-	<div id="navLogo">
-		<img src="images/nysl_logo.png" alt="Northside Youth Soccer League" class="logo">
+	<div class="headerLogo">
+		<a href="index.html"><img src="images/nysl_logo.png" alt="Northside Youth Soccer League" title="Northside Youth Soccer League" class="logo"></a>
 	</div>
 	<div id="navMain"> 
 		<h1>Northside Youth Soccer League</h1>		
@@ -42,20 +43,22 @@
 </header>
 
 <div id="container">
-	<div class="sideImgContainer">
+	<aside>
 		<img src="images/soccer_image1.jpg">
-	</div>
-	<div >
-		<h2>Upcoming Dates</h2>
-		<dl>
-			<dt>August 4</dt>
-				<dd>NYSL Fundraiser</dd>
-			<dt>August 16</dt>
-				<dd>Season Kick-off. Meet the Teams</dd>
-			<dt>September 1</dt>
-				<dd>First Game of the Season (Check Game Schedule for details)</dd>
-		</dl>
-	</div>
+	</aside>
+	<main>
+		<article>
+			<header><h2>Upcoming Dates</h2></header>
+				<dl>
+					<dt>August 4</dt>
+					<dd>NYSL Fundraiser</dd>
+					<dt>August 16</dt>
+					<dd>Season Kick-off. Meet the Teams</dd>
+					<dt>September 1</dt>
+					<dd>First Game of the Season (Check Game Schedule for details)</dd>
+				</dl>
+			</article>
+	</main>
 </div>
 
 </body>
