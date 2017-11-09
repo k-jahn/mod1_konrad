@@ -14,11 +14,10 @@ img {
 }
 
 /*header*/
-header {
+.siteHeader {
 	border-bottom: 2px solid black;
 	margin-bottom: 10px;
 	padding-bottom: 10px
-	background: silver;
 }
 header div {
 	display: inline-block;
@@ -38,7 +37,6 @@ nav ul li{
 	display: flex;
 }
 aside {
-	display: block;
 	width: 300px;
 	margin-right: 20px;
 }
