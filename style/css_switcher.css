@@ -1,0 +1,22 @@
+/*css for the css switcher (trés meta ^^), can easily be removed*/
+
+.cssSwitcher {
+	position: fixed;
+	bottom: 3px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-family: sans-serif;
+	font-size: 12;
+	background-color: #fff;
+	border: 2px solid #000;
+	padding: 2px 4px;
+}
+
+a.switch {
+	text-decoration: none;
+}
+
+.current {
+	font-weight: bold;
+	color: #000;
+}
