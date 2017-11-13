@@ -25,8 +25,13 @@ img {
     width: 100%;
 }
 
+p {
+    margin-left: 20px;
+}
 
-
+dd {
+    margin-bottom: 20px;
+}
 
 /*header*/
 
@@ -82,20 +87,23 @@ nav {
 nav a {
     text-decoration: none;
     color: #fff;
-}
-
-nav a:visited {
-    color: #fff;
-}
-
-nav ul li {
-    list-style-type: none;
-    display: inline;
     border: 3px solid black;
     margin-right: 50px;
     padding: 5px 7px;
     background-color: #033949;
     box-shadow: 3px 3px black;
+}
+
+
+nav a:hover {
+    background-color: #a3ff15 !important;
+    color: #033949 !important;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    
 }
 
 
@@ -117,8 +125,6 @@ main {
 
 .currentPage {
     background-color: #a3ff15 !important;
-}
+    color: #033949 !important;
 
-.currentPage a {
-    color: black !important;
 }

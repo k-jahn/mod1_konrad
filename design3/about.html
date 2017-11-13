@@ -5,14 +5,8 @@
     <!-- general infos -->
     <title>About NYSL</title>
     <link rel="icon" type="image/png" href="images/nysl_logo.png">
-    <!-- all 3 styles loaded -->
-    <link rel="stylesheet" type="text/css" id="nysl_css_1" class="design" href="style/nysl_1.css">
-    <link rel="stylesheet" type="text/css" id="nysl_css_2" class="design" href="style/nysl_2.css">
-    <link rel="stylesheet" type="text/css" id="nysl_css_3" class="design" href="style/nysl_3.css">
-    <!-- scripts and css for the css switcher -->
-    <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/css_switcher.js"></script>
-    <link rel="stylesheet" type="text/css" href="style/css_switcher.css">
+    <!-- load style -->
+    <link rel="stylesheet" type="text/css" id="nysl_css_3" class="design" href="styles/nysl_3.css">
     <!-- meta tags -->
     <meta charset="utf-8">
     <meta name="description" content="Northside Soccer League Homepage">
@@ -22,33 +16,34 @@
 </head>
 
 <body>
-    <header class="siteHeader">
-        <h1>Northside Youth Soccer League</h1>
-        <div id="banner">
-        </div>
-        <div id="titleBar">
-            <h2>About NYSL</h2>
-        </div>
-    </header>
-    <div id="container">
-        <div id="logo">
-            <a href="index.html">
-                <img src="images/nysl_logo.png" alt="Northside Youth Soccer League" title="Northside Youth Soccer League" class="logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="currentPage">
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <div id="background"></div>
+    <div id="page">
+        <header>
+            <div>
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="images/nysl_logo.png" alt="Northside Youth Soccer League" title="Northside Youth Soccer League" class="logo">
+                    </a>
+                </div>
+                <h1>Northside Youth Soccer League</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" >Home</a>
+                    </li>
+                    <li >
+                        <a href="about.html" class="currentPage">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+            
+            
         <main>
             <article>
                 <h3>Mission</h3>
