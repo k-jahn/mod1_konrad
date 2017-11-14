@@ -170,7 +170,11 @@ dd {
     text-align: right;
 }
 
+/*intro paragraph to rules and regulations*/
 
+#RRintro {
+    margin-left: 2.5rem;
+}
 
 /*list formatting*/
 
