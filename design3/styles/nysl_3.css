@@ -75,7 +75,7 @@ nav a:hover {
     background-image: url("../images/design2_image1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 10%;
+    background-position: 50% 0%;
     height: 200px;
     margin 0px;
 }
