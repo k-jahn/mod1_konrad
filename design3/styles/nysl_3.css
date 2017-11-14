@@ -128,7 +128,11 @@ main {
 /*general*/
 
 p {
-    margin-left: 15px;
+    margin-left: 1rem;
+}
+
+.unindented {
+    margin-left: 0rem;
 }
 
 h4 {
@@ -147,6 +151,24 @@ dd {
 }
 
 
+/*formating for contact, used in schedule*/
+
+.contactCard {
+    margin-top: 2rem;
+}
+.contactCard p {
+    margin-left: 0rem;
+}
+
+.contactCard>div{
+    display: flex;
+}
+.contactCard>div>div{
+    flex: 1
+}
+.contactCard>div>div:last-child {
+    text-align: right;
+}
 
 
 
@@ -218,3 +240,35 @@ dd {
 
 
 /*Table Formatting*/
+/*Schedules*/
+
+.tSched {
+    width: 100%;
+    text-align: left;
+    margin-top: 1rem; 
+}
+
+.tSched th {
+    text-decoration: underline;
+}
+
+.tSched td {
+    width: 25%
+}
+
+.tSched td:first-child {
+    padding-left: 2rem;
+}
+
+/*game locations*/
+
+.tLoc {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tLoc td:first-child {
+    width: 18rem;
+}
+
