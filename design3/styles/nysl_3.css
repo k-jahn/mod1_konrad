@@ -13,6 +13,11 @@ body > div {
     box-sizing: border-box;
 }
 
+/* 
+working but not so nice.
+if your structure changes, everything breaks.
+classes ftw ;)
+ */
 body > div > div{
     display: flex;
     background-color: white;
@@ -85,6 +90,7 @@ nav a:hover{
     background-color: white !important;
     color: #033949 !important;
 }
+/* nav a.currentPage => nav a.active */
 .currentPage {
     background-color: white !important;
     color: #033949 !important;

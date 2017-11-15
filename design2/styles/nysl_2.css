@@ -124,7 +124,9 @@ main {
 }
 
 .currentPage {
-    background-color: #a3ff15 !important;
+    /* avoid !important. thats designing with a bulldozer. */
+    background-color: #a3ff15 !important; 
     color: #033949 !important;
 
 }
+
