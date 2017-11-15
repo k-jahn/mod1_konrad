@@ -16,6 +16,11 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+/*define vars*/
+
+:root {
+    --nyslBlue: #033949;
+}
 
 
 /*general*/
@@ -34,6 +39,7 @@ img {
 
 
 
+
 /*site container*/
 
 #page {
@@ -48,10 +54,11 @@ img {
 
 
 
+
 /*top nav bar*/
 
 nav {
-    background-color: #033949;
+    background-color: var(--nyslBlue);
     height: 40px;
     line-height: 40px;
     margin: 0px;
@@ -70,7 +77,7 @@ nav ul li {
 
 
 nav a {
-    background-color: #033949;
+    background-color: var(--nyslBlue);
     color: white;
     padding: 5.5px;
 
@@ -80,13 +87,14 @@ nav a {
 
 nav a:hover {
     background-color: white !important;
-    color: #033949 !important;
+    color: var(--nyslBlue) !important;
 }
 
 .currentPage {
     background-color: white !important;
-    color: #033949 !important;
+    color: var(--nyslBlue) !important;
 }
+
 
 
 
@@ -113,10 +121,11 @@ nav a:hover {
 
 
 
+
 /*location title bar*/
 
 h2 {
-    background-color: #033949;
+    background-color: var(--nyslBlue);
     color: white;
     padding: 5px;
     font-size: 25px;
@@ -128,12 +137,14 @@ h2 {
 
 
 
+
 /*site body container*/
 
 body>div>div {
     display: flex;
     background-color: white;
 }
+
 
 
 
@@ -149,12 +160,14 @@ aside {
 
 
 
+
 /*main!*/
 
 main {
     padding: 2em;
     flex: 1;
 }
+
 
 
 
@@ -182,6 +195,7 @@ h4 {
 
 
 
+
 /*class for div containing 2 columns*/
 
 
@@ -194,6 +208,7 @@ dt {
 dd {
     margin-bottom: 10px;
 }
+
 
 
 
@@ -222,11 +237,13 @@ dd {
 
 
 
+
 /*intro paragraph to rules and regulations*/
 
 #RRintro {
     margin-left: 2em;
 }
+
 
 
 
@@ -246,6 +263,7 @@ dd {
 
 
 
+
 /*top level*/
 
 #RR>li {
@@ -260,11 +278,13 @@ dd {
 
 
 
+
 /*2nd level unsorted*/
 
 #RR>li>ul {
     list-style-type: square;
 }
+
 
 
 
@@ -281,11 +301,13 @@ dd {
 
 
 
+
 /*2nd level unsorted 3rd level sorted*/
 
 #RR>li>ul>li>ol>li {
     margin-top: 0.1em;
 }
+
 
 
 
@@ -301,12 +323,14 @@ dd {
 
 
 
+
 /*2nd level sorted 3rd level*/
 
 #RR>li>ol>li>ol {
     list-style: lower-latin;
     margin-top: 0;
 }
+
 
 
 
@@ -336,6 +360,7 @@ dd {
 
 
 
+
 /*game locations*/
 
 .tLoc {
@@ -347,6 +372,7 @@ dd {
 .tLoc td:first-child {
     width: 15em;
 }
+
 
 
 
@@ -368,6 +394,7 @@ dd {
 
 
 
+
 /*textfield style*/
 
 #regForm input[type=text] {
@@ -378,7 +405,7 @@ dd {
 }
 
 #regForm input[type=text]:focus {
-    border: 2px solid #033949;
+    border: 2px solid var(--nyslBlue);
     outline: 0px;
     background-color: #eee;
 }
@@ -386,6 +413,7 @@ dd {
 #regForm input[type=text]:hover {
     background-color: #eee;
 }
+
 
 
 
@@ -398,6 +426,7 @@ dd {
     opacity: 0;
     margin-right: 0.5em;
 }
+
 
 
 
@@ -415,6 +444,7 @@ dd {
 
 
 
+
 /*checkbox hover*/
 
 #regForm td:hover .cBox {
@@ -424,13 +454,15 @@ dd {
 #regForm li:hover .cBox {
     background-color: #eee;
 }
-#regForm input:focus ~ .cBox {
-    border-color: #033949;
+
+#regForm input:focus~.cBox {
+    border-color: var(--nyslBlue);
 }
 
-#regForm input:focus ~ .cBox {
-    border-color: #033949;
+#regForm input:focus~.cBox {
+    border-color: var(--nyslBlue);
 }
+
 
 
 
@@ -446,11 +478,13 @@ dd {
 
 
 
+
 /* unhide checkmark when checked */
 
 input:checked~.cBox:after {
     display: block;
 }
+
 
 
 
@@ -468,10 +502,11 @@ input:checked~.cBox:after {
 
 
 
+
 /*ugly! makes cBox stay put*/
 
-#regForm li,
-td {
+#regForm li {
+    padding: 2px 0 0 0;
     position: relative;
     line-height: 27px;
     cursor: pointer;
@@ -481,13 +516,17 @@ td {
     user-select: none;
 }
 
-#regForm li {
-    padding: 2px 0 0 0;
-}
-
 #regForm td {
     padding: 0;
+    position: relative;
+    line-height: 27px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
 
 
 
@@ -511,11 +550,13 @@ td {
 
 
 
+
 /*checkbox tables*/
 
 #regForm table {
     width: 100%;
 }
+
 
 
 
@@ -539,11 +580,13 @@ td {
 
 
 
+
 /*fine print paragraph*/
 
 #regForm .finePrint {
     font-size: 16px;
 }
+
 
 
 
@@ -556,8 +599,32 @@ td {
     border: 2px solid grey;
 }
 
-
-
 #regForm .submitWrapper {
     text-align: center;
 }
+
+
+/*modal popups for maps*/
+
+.modalWrapper {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.modalContent {
+    border-color: white;
+    margin: 100px auto;
+    border: 2px solid var(--nyslBlue);
+}
+
+/*display classes*/
+
+#modal1 {
+    display: none;
+}
+
