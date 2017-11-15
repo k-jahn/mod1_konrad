@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- general infos -->
+    <title>About NYSL</title>
+    <link rel="icon" type="image/png" href="images/nysl_logo.png">
+    <!-- load style -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Northside Youth Soccer League Homepage">
+    <meta name="keywords" content="Chicago,Soccer,Sports,Kids,Youth">
+    <meta name="author" content="konrad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">Schedule</a>
+                    </li>
+                    <li>
+                        <a href="rules.html">Rules</a>
+                    </li>
+                    <li>
+                        <a href="register.html" class="currentPage">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="banner">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="images/nysl_logo.png" alt="Northside Youth Soccer League" title="Northside Youth Soccer League" class="logo">
+                    </a>
+                </div>
+            </div>
+            <h2>Registration Form</h2>
+        </header>
+        <div>
+            <main>
+                <form id="regForm">
+                    <div class="columnWrapper">
+                        <div>
+                            <h3>Player’s First Name:</h3>
+                            <input type="text" name="firstName">
+                        </div>
+                        <div>
+                            <h3>Last Name:</h3>
+                            <input type="text" name="lastName">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Street Address:</h3>
+                        <input type="text" name="address">
+                    </div>
+                    <div class="columnWrapper">
+                        <div>
+                            <h3>City:</h3>
+                            <input type="text" name="city">
+                        </div>
+                        <div>
+                            <h3>Zip Code</h3>
+                            <input type="text" name="zip">
+                        </div>
+                    </div>
+                    <div class="columnWrapper">
+                        <div>
+                            <h3>Birth Date:</h3> (mm/dd/yy)
+                            <input type="text" name="birthDate">
+                        </div>
+                        <div>
+                            <h3>Gender:</h3>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="genderFemale"><span class="cBox"></span>Female
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="genderMale"><span class="cBox"></span>Male
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Grade:</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="grade0"><span class="cBox"></span>Pre School
+                            </li>
+                            <li>
+                                <input type="checkbox" name="grade1"><span class="cBox"></span>1st
+                            </li>
+                            <li>
+                                <input type="checkbox" name="grade2"><span class="cBox"></span>2nd
+                            </li>
+                            <li>
+                                <input type="checkbox" name="grade3"><span class="cBox"></span>3rd
+                            </li>
+                            <li>
+                                <input type="checkbox" name="grade4"><span class="cBox"></span>4th
+                            </li>
+                            <li>
+                                <input type="checkbox" name="grade5"><span class="cBox"></span>5th
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Parent/ Guardian:</h3>
+                        <input type="text" name="Guardian">
+                    </div>
+                    <div>
+                        <h3>Contact Phone:</h3>
+                        <input type="text" name="phone">
+                    </div>
+                    <div>
+                        <h3>Contact Email:</h3>
+                        <input type="text" name="email">
+                    </div>
+                    <h3>Which elementary schools do you live near?</h3>
+                    <div class="columnWrapper">
+                        <div>
+                            <h4>First Closest School:</h4>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="schoolCloseKatz"><span class="cBox"></span>AJ Katzenmaier
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="schoolCloseHart"><span class="cBox"></span>Marjorie P Hart
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="schoolCloseGreen"><span class="cBox"></span>Greenbay
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="schoolNorth"><span class="cBox"></span>North Elementary
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="schoolCloseSouth"><span class="cBox"></span>South Elementary
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="SchoolCloseYeag"><span class="cBox"></span>Howard A Yeager
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <h4>Second Closest School:</h4>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="schoolSecondKatz"><span class="cBox"></span>AJ Katzenmaier
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="schoolSecondHart"><span class="cBox"></span>Marjorie P Hart
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="schoolSecondGreen"><span class="cBox"></span>Greenbay
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="schoolSecondNorth"><span class="cBox"></span>North Elementary
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="schoolSecondSouth"><span class="cBox"></span>South Elementary
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="SchoolSecondYeag"><span class="cBox"></span>Howard A Yeager
+                                    </td>
+                                </tr>
+                                </ul>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>What position(s) do you normally play?</h3> (check all that apply)
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="posPlayForward"><span class="cBox"></span>Forward
+                            </li>
+                            <li>
+                                <input type="checkbox" name="posPlayMidfield"><span class="cBox"></span>Midfield
+                            </li>
+                            <li>
+                                <input type="checkbox" name="posPlayDefense"><span class="cBox"></span>Defense
+                            </li>
+                            <li>
+                                <input type="checkbox" name="posPlayGoal"><span class="cBox"></span>Goalkeeper
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>What position(s) do you want to play? </h3>(check all that apply)
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="posWantForward"><span class="cBox"></span>Forward</li>
+                            <li>
+                                <input type="checkbox" name="posWantMidfield"><span class="cBox"></span>Midfield</li>
+                            <li>
+                                <input type="checkbox" name="posWantDefense"><span class="cBox"></span>Defense</li>
+                            <li>
+                                <input type="checkbox" name="posWantGoal"><span class="cBox"></span>Goalkeeper</li>
+                        </ul>
+                    </div>
+                    <h3>Already Have a Uniform</h3>
+                    <input type="checkbox" name="uniHave"><span class="cBox"></span>
+                    <div class="columnWrapper">
+                        <div>
+                            <h3>Jersey Size:</h3>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Youth Small</td>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Small</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Youth Medium</td>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Medium</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Youth Large</td>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Large</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Extra-Large</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <h3>Shorts Size:</h3>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Youth Small</td>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Small</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Youth Medium</td>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Medium</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Youth Large</td>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Large</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox" name=""><span class="cBox"></span>Extra-Large</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="finePrint">
+                        <h3>Permission to Play</h3>
+                        <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (N YSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify N YSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities , which transportation. </p>
+                        <p>By entering and submitting my name below, I hereby agree and authorize the above form. In addition, by entering and submitting my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                    </div>
+                    <div>
+                        <h3>Parent/Guardian:</h3>
+                        <input type="text" name="sigGuardian">
+                        <h3> Date:</h3>
+                        <input type="text" name="date">
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

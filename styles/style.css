@@ -30,7 +30,7 @@ img {
 
 /*site container*/
 
-body>div {
+#page {
     max-width: 900px;
     margin: 20px auto;
     border: 1px solid black;
@@ -97,7 +97,7 @@ nav a:hover {
     background-size: cover;
     background-position: 50% 0%;
     height: 200px;
-    margin 0px;
+    margin: 0px;
 }
 
 
@@ -158,6 +158,9 @@ p {
 h4 {
     display: inline;
 }
+
+
+/*class for div containing 2 columns*/
 
 
 /*description list, upcoming*/
@@ -296,3 +299,103 @@ dd {
     width: 15em;
 }
 
+/*registration form*/
+
+
+input[type=text] {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 0.2em;
+    border: 2px solid grey;
+}
+input:focus{
+    border: 2px solid #033949;
+    outline: 0px;
+    background-color: #eee;
+}
+input:hover{
+    background-color: #eee;
+}
+
+/*hide default checkbox*/
+
+input[type=checkbox] {
+    opacity: 0;
+    margin-right: 0.5em;
+}
+
+/*style replacement span*/
+
+.cBox {
+    height: 0.7em;
+    width: 0.7em;
+    border: 2px solid grey;
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+}
+input[type=checkbox]:hover~.cBox {
+    background-color: #eee;
+}
+
+/*ugly! makes cBox stay put*/
+
+#regForm li {
+    position: relative;
+    line-height: 27px;
+    padding: 2px 0 0 0;
+}
+#regForm td {
+    position: relative;
+    line-height: 27px;
+    padding: 0;
+}
+
+
+/*checkbox lists*/
+
+#regForm ul {
+    padding: 0;
+    margin: 0;
+}
+
+#regForm li {
+    display: inline;
+    margin: 0 0.5em;
+}
+#regForm li:first-child {
+    margin-left: 0;
+}
+#regForm > div {
+    margin: 1em 0;
+}
+#regForm h3 {
+    display: inline;
+    font-size: 1.1em;
+}
+#regForm  h4 {
+    display: block;
+    margin: 0;
+}
+
+#regForm table {
+
+}
+
+.columnWrapper {
+    display: flex;
+}
+.columnWrapper > div {
+    flex:1;
+}
+.columnWrapper > div:first-child {
+    margin-right: 1em;
+}
+.columnWrapper > div:last-child {
+    margin-left: 1em;
+}
+
+
+#regForm .finePrint {
+    font-size: 16px;
+}
