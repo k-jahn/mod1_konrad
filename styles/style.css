@@ -184,7 +184,7 @@ dd {
     display: flex;
 }
 .contactCard>div>div{
-    flex: 1
+    flex: 1;
 }
 .contactCard>div>div:last-child {
     text-align: right;
