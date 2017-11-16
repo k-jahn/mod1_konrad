@@ -49,8 +49,8 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: background-color 1s linear;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 1s ease-in-out;
     display: none;
 }
 
@@ -86,5 +86,6 @@
 /*modal active!*/
 
 .modalActive {
-    display: block !important;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
 }

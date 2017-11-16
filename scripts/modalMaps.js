@@ -27,7 +27,7 @@ var south = {
     modal: document.getElementById('modalSouth')
 };
 
-var school = [katz, green, yeag, hart, north, south]
+var school = [katz, green, yeag, hart, north, south];
 
 var modalClose = document.getElementsByClassName('modalClose');
 
@@ -72,3 +72,26 @@ for (var i in modalClose) {
     }
 }
 //hide modal when clicking outside of content
+
+
+//new structure using document.onclick
+
+
+function modalOn(modal){
+    modal.className +=  " modalActive"
+    
+}
+
+
+document.onclick = function(event){
+    console.log(event)
+    // if(event.target.className.indexOf("closeModal") !== -1){
+    //     close .... 
+    // }
+
+    // if(event.target.className.indexOf("openmodal") !== -1){
+    //     open...
+    //     event.target.dataSet.modal =
+    // }
+
+}
