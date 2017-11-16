@@ -1,0 +1,90 @@
+/*Schedules*/
+
+.tSched {
+    width: 100%;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.tSched th {
+    text-decoration: underline;
+}
+
+.tSched td {
+    width: 25%
+}
+
+.tSched td:first-child {
+    padding-left: 1.5em;
+}
+
+
+/*game locations*/
+
+.tLoc {
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.tLoc td:first-child {
+    width: 15em;
+}
+
+.tLoc .svgWrapper {
+    width: 0.8em;
+}
+
+.tLoc button {
+    padding: 0px 3px;
+}
+
+
+/*modal popups for maps*/
+
+.modalWrapper {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 1s linear;
+    display: none;
+}
+
+.modalContent {
+    background-color: white;
+    z-index: 200;
+    margin: 4em auto;
+    border: 2px solid var(--nyslBlue);
+    padding: 20px;
+    width: 450px;
+}
+
+
+/*modal header*/
+
+.modalContent header {
+    position: relative;
+}
+
+.modalClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modalContent .mapWrapper {
+    width: 450px;
+    display: block;
+    margin: 1em 0;
+}
+
+
+/*modal active!*/
+
+.modalActive {
+    display: block !important;
+}
