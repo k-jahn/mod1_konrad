@@ -94,6 +94,7 @@ nav ul li {
 
 nav a {
     background-color: var(--nyslBlue);
+    transition: all 0.2s ease-in-out;
     color: white;
     padding: 5.5px;
     line-height: 40px;
