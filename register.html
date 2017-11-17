@@ -74,13 +74,13 @@
                         </div>
                         <div>
                             <h3>Zip Code</h3>
-                            <input type="text" name="zip">
+                            <input type="number" name="zip">
                         </div>
                     </div>
                     <div class="columnWrapper">
                         <div>
                             <h3>Birth Date:</h3> (mm/dd/yy)
-                            <input type="text" name="birthDate">
+                            <input type="number" name="birthDate">
                         </div>
                         <div>
                             <h3>Gender:</h3>
@@ -130,12 +130,12 @@
                         </ul>
                     </div>
                     <div>
-                        <h3>Parent/ Guardian:</h3>
+                        <h3>Parent or Guardian:</h3>
                         <input type="text" name="Guardian">
                     </div>
                     <div>
                         <h3>Contact Phone:</h3>
-                        <input type="text" name="phone">
+                        <input type="number" name="phone">
                     </div>
                     <div>
                         <h3>Contact Email:</h3>
@@ -261,15 +261,15 @@
                             </li>
                         </ul>
                     </div>
-                    <ul>
+                    <ul> <!-- ul/li redundant but necessary because of checkbox styling (mb) -->
                         <li>
-                            <label>
-                                <input type="checkbox" name="uniHave"><span class="cBox"></span>
+                            <label id="haveUniform">
+                                <input type="checkbox" name="uniHave" id="haveUniform"><span class="cBox"></span>
                                 <h3>Already Have a Uniform</h3>
                             </label>
                         </li>
                     </ul>
-                    <div class="columnWrapper">
+                    <div class="columnWrapper" id="uniformSize">
                         <div>
                             <h3>Jersey Size:</h3>
                             <table>
@@ -392,5 +392,10 @@
         </div>
     </div>
 </body>
+
+<footer>
+    <!-- load regform scripting -->
+    <script type="text/javascript" src="scripts/regForm.js"></script>
+</footer>
 
 </html>
