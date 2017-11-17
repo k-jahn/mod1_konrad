@@ -1,3 +1,4 @@
+
 /*registration form*/
 
 #regForm>div {
@@ -53,7 +54,10 @@
     margin-right: 0.5em;
 }
 
-
+#regForm input[type=radio] {
+    opacity: 0;
+    margin-right: 0.5em;
+}
 
 
 

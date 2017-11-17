@@ -1,3 +1,5 @@
+/*main style sheet, for everything reused on multiple pages*/
+
 /*load font*/
 
 @font-face {
@@ -46,11 +48,12 @@ img {
 button {
     font-size: 0.8em;
     border: 2px solid grey;
-    background-color: #eee;
+    background-color: #ccc;
+    border-radius: 4px;
 }
 
 button:hover {
-    background-color: #ddd;
+    background-color: #aaa;
 }
 
 button:focus {
@@ -66,7 +69,7 @@ button:focus {
     max-width: 900px;
     margin: 20px auto;
     border: 1px solid black;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: 4px 4px 4px #555;
     box-sizing: border-box;
 }
 
@@ -96,7 +99,7 @@ nav a {
     background-color: var(--nyslBlue);
     transition: all 0.2s ease-in-out;
     color: white;
-    padding: 5.5px;
+    padding: 6px;
     line-height: 40px;
     text-decoration: none;
 }
@@ -165,8 +168,6 @@ aside {
     box-sizing: border-box;
 }
 
-
-
 /*main!*/
 
 main {
@@ -174,12 +175,8 @@ main {
     flex: 1;
 }
 
-
-
 /*content formating*/
 
-
-/*general*/
 
 p {
     margin-left: 1em;
@@ -192,13 +189,7 @@ p {
 h4 {
     display: inline;
 }
-
-
-
-/*class for div containing 2 columns*/
-
-
-/*description list, upcoming*/
+/*description lists*/
 
 dt {
     font-weight: bold;
@@ -209,31 +200,11 @@ dd {
 }
 
 
+/*click through button contents */
 
-/*formating for contact, used in schedule*/
-
-.contactCard {
-    margin-top: 2em;
+button * {
+    pointer-events: none;
 }
-
-.contactCard p {
-    margin-left: 0em;
-}
-
-.contactCard>div {
-    display: flex;
-}
-
-.contactCard>div>div {
-    flex: 1;
-}
-
-.contactCard>div>div:last-child {
-    text-align: right;
-}
-
-
-
 
 /*column wrapper for dual columns*/
 
