@@ -222,17 +222,29 @@ input:checked~.cBox:after {
     text-align: center;
 }
 
+
+/*school scripting css*/
+
+#regForm .school1, #regForm .school2  {
+    transition: all 0.5s ease-out 0s;
+}
+
+
+
 /*uniform scripting css*/
 
 #regForm #uniformSize  {
     transition: all 0.5s ease-out 0s;
 }
 
+/*inactive text*/
 
-#regForm #uniformSize.inactive  {
+#regForm .inactive  {
     color: rgba(0,0,0,0.5);
     pointer-events: none;
 }
+
+/*inactive checkboxes*/
 
 #regForm .inactive .cBox {
     border-color: rgba(0,0,0,0.1);
