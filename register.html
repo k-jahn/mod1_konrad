@@ -261,7 +261,8 @@
                             </li>
                         </ul>
                     </div>
-                    <ul> <!-- ul/li redundant but necessary because of checkbox styling (mb) -->
+                    <ul>
+                        <!-- ul/li redundant but necessary because of checkbox styling (mb) -->
                         <li>
                             <label id="haveUniform">
                                 <input type="checkbox" name="uniHave" id="haveUniform"><span class="cBox"></span>
@@ -378,21 +379,24 @@
                             By entering and submitting my name below, I hereby agree and authorize the above form. In addition, by entering and submitting my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.
                         </p>
                     </div>
-                    <div>
-                        <h3>Parent/Guardian:</h3>
-                        <input type="text" name="sigGuardian">
-                        <h3> Date:</h3>
-                        <input type="text" name="date">
-                        <div class="submitWrapper">
-                            <button>submit</button>
+                    <div class="columnWrapper signature">
+                        <div>
+                            <h3>Parent/Guardian:</h3>
+                            <input type="text" name="sigGuardian">
                         </div>
+                        <div>
+                            <h3> Date:</h3>
+                            <input type="text" name="date">
+                        </div>
+                    </div>
+                    <div class="submitWrapper">
+                        <button>submit</button>
                     </div>
                 </form>
             </main>
         </div>
     </div>
 </body>
-
 <footer>
     <!-- load regform scripting -->
     <script type="text/javascript" src="scripts/regForm.js"></script>

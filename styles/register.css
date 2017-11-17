@@ -204,6 +204,11 @@ input:checked~.cBox:after {
     font-size: 16px;
 }
 
+/*signature box*/
+#regForm .signature div:first-child {
+    flex: 2;
+}
+
 
 /*submit button*/
 
