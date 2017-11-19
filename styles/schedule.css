@@ -1,0 +1,137 @@
+/*style sheet for schedule page specific elements*/
+
+/*Schedules*/
+
+.tSched {
+    width: 100%;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.tSched th {
+    text-decoration: underline;
+}
+
+.tSched td {
+    width: 25%
+}
+
+.tSched td:first-child {
+    padding-left: 1.5em;
+}
+
+
+/*game locations*/
+
+.tLoc {
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.tLoc td:first-child {
+    width: 15em;
+}
+
+.tLoc .svgWrapper {
+    width: 0.8em;
+}
+
+.tLoc button {
+    padding: 0px 3px;
+}
+
+
+/*modal background shader*/
+
+#modalShader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.8s ease-out;
+    pointer-events: none;
+    z-index: 50;
+}
+
+#modalShader.active {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/*modal popups for maps*/
+
+.modalWrapper {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+
+    display: none;
+}
+
+.modalContent {
+    background-color: white;
+    margin: 4em auto;
+    border: 2px solid var(--nyslBlue);
+    padding: 20px;
+    width: 452px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.7);
+}
+
+
+
+/*modal header*/
+
+.modalContent header {
+    position: relative;
+}
+
+.modalClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modalContent .mapWrapper {
+    width: 450px;
+    display: block;
+    margin: 1em 0;
+    border: 2px solid grey;
+}
+
+
+
+/*modal active!*/
+
+.modalWrapper.active {
+    display: block;
+}
+
+
+
+/*formating for contact, used in schedule*/
+
+.contactCard {
+    margin-top: 2em;
+}
+
+.contactCard p {
+    margin-left: 0em;
+}
+
+.contactCard>div {
+    display: flex;
+}
+
+.contactCard>div>div {
+    flex: 1;
+}
+
+.contactCard>div>div:last-child {
+    text-align: right;
+}
