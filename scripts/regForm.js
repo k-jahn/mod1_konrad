@@ -20,7 +20,7 @@ document.onclick = function(event) {
 
     // if first school is clicked
     if (event.target.name == 'school1') {
-        console.log('you clicked'+event.target.id)
+        console.log('Your closest School is '+event.target.id.substr(0,event.target.id.length-1))
         //remove inactive class from all second schools
         var schools=document.getElementsByClassName('school2label');
         for(var x of schools) {
@@ -28,12 +28,15 @@ document.onclick = function(event) {
         }
         // id of second school to block
         var blockId=event.target.id.substr(0,event.target.id.length-1)+2;
-        
         //remove check from second school if present
-        console.log(document.getElementById(blockId))
         document.getElementById(blockId).checked=false;
-        //add inactive class to second school
+        //add inactive class to second schools label
         document.getElementById(blockId+'label').classList.add('inactive')
     }
-    // 
+    
+    // if submit bottun is clicked
+    if (event.target.id == "regFormSubmit") {
+        console.log("validation not implemented yet")
+        return false;
+    }
 }

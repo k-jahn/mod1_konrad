@@ -1,7 +1,7 @@
 // modal Window JS for Game Location Maps
 
 // open modal window function
-function openModal(school) {
+function openModal(school,event) {
     console.log("Look! A Modal Window for " + event.target.dataset.school)
     // give window active class
     document.getElementById("modal" + school).className += " active";
@@ -21,18 +21,18 @@ function closeModal() {
 // click listener function
 document.onclick = function(event) {
     //console.log(event)
-    console.log('click');
+    console.log(event);
     //open modal window
     if (event.target.className.indexOf("modalOpen") != -1) {
         var school = event.target.dataset.school;
-        openModal(school);
+        openModal(school,event);
     }
 
     // close modal window with x button
     if (event.target.className.indexOf("modalClose") != -1) {
         closeModal();
     }
-    // close modal window on lick on background
+    // close modal window on click on background
     if (event.target.className.indexOf("modalWrapper") != -1) {
         closeModal();
     }

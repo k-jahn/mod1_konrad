@@ -28,18 +28,41 @@ input[type=text], input[type=number] {
     border: 2px solid grey;
     transition: all 0.2s ease-in-out;
     background-color: #fff;
+    outline: none;
 }
 /*remove number spin buttons*/
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;
 }
+/*different cases*/
+input[type=text]:invalid, input[type=number]:invalid {
+    outline:none;
+    border: 2px solid red;
+}
+input[type=text], input[type=number] {
+    outline:none;
+    border: 2px solid black;
+}
+input[type=text], input[type=number] {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 0.5em;
+    border: 2px solid grey;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+}
+
 input[type=text]:focus, input[type=number]:focus {
     border: 2px solid var(--nyslBlue);
-    outline: 0px;
+ 
     background-color: #ddd;
 }
+
 
 input[type=text]:hover, input[type=number]:hover  {
     background-color: #ddd;
@@ -56,12 +79,12 @@ input[type=text]:hover, input[type=number]:hover  {
 
 #regForm input[type=checkbox] {
     opacity: 0;
-    margin-right: 0.5em;
+    position: absolute;
 }
 
 #regForm input[type=radio] {
     opacity: 0;
-    margin-right: 0.5em;
+    position: absolute;
 }
 
 
@@ -73,8 +96,9 @@ input[type=text]:hover, input[type=number]:hover  {
     width: 0.7em;
     border: 2px solid grey;
     position: absolute;
-    top: 0.2em;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
     pointer-events: none;
     background-color: #fff;
     transition: all 0.2s ease-in-out;
@@ -149,7 +173,7 @@ input:checked~.cBox:after {
 /*ugly! makes cBox stay put*/
 
 #regForm li {
-    padding: 2px 0 0 0;
+    padding: 2px 0 0em 0;
     position: relative;
     line-height: 27px;
     cursor: pointer;
@@ -170,6 +194,12 @@ input:checked~.cBox:after {
     user-select: none;
 }
 
+#regForm label {
+    display: inline-block;
+    padding: 0 0 0 1.2em;
+    height: 100%
+    line-height: 1em;
+}
 
 
 
@@ -180,6 +210,7 @@ input:checked~.cBox:after {
 #regForm ul {
     padding: 0;
     margin: 0;
+    /*font-size: 16px;*/
 }
 
 #regForm li {
@@ -196,7 +227,12 @@ input:checked~.cBox:after {
 
 #regForm table {
     width: 100%;
+    /*font-size: 16px;*/
 }
+#regForm table td{
+
+}
+
 
 /*fine print paragraph*/
 
