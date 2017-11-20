@@ -9,7 +9,7 @@ document.onclick = function(event) {
         //check if checked
         var uniform=event.target.checked 
         console.log("Do you have a Uniform? "+uniform)
-        if(uniform){
+        if (uniform){
             // hide sizes
             document.getElementById('uniformSize').classList.add("inactive");
         } else {
@@ -23,8 +23,8 @@ document.onclick = function(event) {
         console.log('Your closest School is '+event.target.id.substr(0,event.target.id.length-1))
         //remove inactive class from all second schools
         var schools=document.getElementsByClassName('school2label');
-        for(var x of schools) {
-            x.classList.remove('inactive');
+        for (var x=0; x<schools.length; x++) {
+            schools[x].classList.remove('inactive');
         }
         // id of second school to block
         var blockId=event.target.id.substr(0,event.target.id.length-1)+2;

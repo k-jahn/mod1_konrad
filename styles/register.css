@@ -197,8 +197,7 @@ input:checked~.cBox:after {
 #regForm label {
     display: inline-block;
     padding: 0 0 0 1.2em;
-    height: 100%
-    line-height: 1em;
+    height: 100%;
 }
 
 
@@ -270,7 +269,8 @@ input:checked~.cBox:after {
 /*uniform scripting css*/
 
 #regForm #uniformSize  {
-    transition: all 0.5s ease-out 0s;
+    transition: color 0.5s ease-out 0s;
+    transition: border-color 0.5s ease-out 0s;
 }
 
 /*inactive text*/
