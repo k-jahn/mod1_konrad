@@ -21,7 +21,7 @@ function closeModal() {
 // click listener function
 document.onclick = function(event) {
     //console.log(event)
-    console.log(event);
+    // console.log(event);
     //open modal window
     if (event.target.className.indexOf("modalOpen") != -1) {
         var school = event.target.dataset.school;
